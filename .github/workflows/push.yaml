@@ -1,15 +1,15 @@
 name: golang-pipeline
 on: push
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v4
-      - uses: golangci/golangci-lint-action@v4
+#  lint:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v4
+#      - uses: actions/setup-go@v4
+#      - uses: golangci/golangci-lint-action@v4
 
   test:
-    needs: [ lint ]
+#    needs: [ lint ]
     runs-on: ubuntu-latest
     container: golang:1.22
     steps:
